@@ -16,48 +16,190 @@
 
 <body id="body">
   <header class="header">
-    <div class="header__question-line">
-      <ul>
+    <div class="header__question-line question-line">
+      <ul class="question-line__list">
         <li>
-          <a href="#">Задать вопрос</a>
+          <a class="question-line__link" href="#">Задать вопрос</a>
         </li>
         <li>
-          <a href="#">Проверить состояние заказа</a>
+          <a class="question-link" href="#">Проверить состояние заказа</a>
         </li>
       </ul>
     </div>
+
     <nav class="header__nav nav nav--nojs">
-      <div class="nav__wrapper">
-        <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Наши салоны
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Онлайн сервисы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a  class="nav__link">
-              Услуги
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Акции
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Сотрудничество
+      <div class="nav__burger-menu burger-menu">
+        <button class="burger-menu__toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">
             </a>
           </li>
         </ul>
       </div>
+
+      <div class="nav__main-nav main-nav">
+        <a class="main-nav__tel tel" href="tel:+78001003131">
+          <span class="tel__number">8 800 100 31 31</span>
+          <span class="tel__info">– по РФ бесплатно</span>
+        </a>
+
+        <ul class="main-nav__site-nav site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Наши салоны</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--selection" href="#">Онлайн сервисы</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--selection" href="#">Услуги</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--selection" href="#">Акции</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Сотрудничество</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__controls-list controls-list">
+          <li class="controls-list__item">
+            <a class="controls-list__link" href="#">
+              <svg id="search" fill="none" width="21" height="24" xmlns="http://www.w3.org/2000/svg"
+                aria-labelledby="geo">
+                <title id="geo">Местоположение</title>
+                <use xlink:href="img/sprite_auto.svg#icon-geo"></use>
+              </svg>
+              <span class="controls-list__geo-title">Москва</span>
+            </a>
+          </li>
+          <li class="controls-list__item">
+            <a class="controls-list__link" href="#">
+              <svg id="search" fill="none" width="21" height="24" xmlns="http://www.w3.org/2000/svg"
+                aria-labelledby="search">
+                <title id="search">Поиск</title>
+                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="controls-list__item">
+            <a class="controls-list__link" href="#">
+              <svg fill="none" width="21" height="24" xmlns="http://www.w3.org/2000/svg"
+                aria-labelledby="notifications">
+                <title id="notifications">Уведомления</title>
+                <use xlink:href="img/sprite_auto.svg#icon-notification"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="controls-list__item">
+            <a class="controls-list__link" href="#">
+              <svg fill="none" width="21" height="24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="account">
+                <title id="account">Аккаунт</title>
+                <use xlink:href="img/sprite_auto.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <picture class="main-nav__main-logo main-logo">
+          <source srcset="img/main-logo.webp 1x, img/main-logo@2x.webp 2x" type="image/webp">
+          <img src="img/main-logo.png" alt="Логотип мебельной фабрики Мария" srcset="img/main-logo@2x.png 2x"
+            width="221" height="52">
+        </picture>
+
+        <ul class="main-nav__categories categories">
+          <li class="category__item">
+            <button class="category__tab category__tab--active">Кухни</button>
+          </li>
+          <li class="category__item">
+            <button class="category__tab">Шкафы</button>
+          </li>
+          <li class="category__item">
+            <button class="category__tab">Ванные</button>
+          </li>
+        </ul>
+
+        <a href="#" class="main-nav__order-project order-project">
+          Заказать проект
+        </a>
+
+        <ul class="main-nav__types types">
+          <li class="types__element types__element--active">
+            <ul class="types__list">
+              <li class="types__item">
+                <a class="types__link" href="#">
+                  Современные
+                  <span class="types__quantity">43</span>
+                </a>
+                <span class="types__delimeter">/</span>
+              </li>
+              <li class="types__item">
+                <a class="types__link" href="#">
+                  Классические
+                  <span class="types__quantity">23</span>
+                </a>
+                <span class="types__delimeter">/</span>
+              </li>
+              <li class="types__item">
+                <a class="types__link" href="#">
+                  Неоклассика
+                  <span class="types__quantity">27</span>
+                </a>
+                <span class="types__delimeter">/</span>
+              </li>
+              <li class="types__item">
+                <a class="types__link" href="#">
+                  KarMa by Karim
+                  <span class="types__quantity visually-hidden"></span>
+                </a>
+              </li>
+              <li class="types__item">
+                <a class="types__link" href="#">
+                  Rashid
+                  <span class="types__quantity">15</span>
+                </a>
+                <span class="types__delimeter">/</span>
+              </li>
+              <li class="types__item">
+                <a class="types__link" href="#">
+                  Прованс
+                  <span class="types__quantity">18</span>
+                </a>
+                <span class="types__delimeter">/</span>
+              </li>
+              <li class="types__item">
+                <a class="types__link" href="#">
+                  Лофт
+                  <span class="types__quantity">14</span>
+                </a>
+                <span class="types__delimeter">/</span>
+              </li>
+              <li class="types__item">
+                <a class="types__link" href="#">
+                  Скандинавский стиль
+                  <span class="types__quantity">12</span>
+                </a>
+                <span class="types__delimeter">/</span>
+              </li>
+              <li class="types__item">
+                <a class="types__link" href="#">
+                  Хай-тек
+                  <span class="types__quantity">11</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="types__element">
+          </li>
+          <li class="types__element">
+          </li>
+        </ul>
+
+
+      </div>
     </nav>
+
+
 
   </header>
   <main>
