@@ -1,9 +1,3 @@
-@mixin container {
-  max-width: $desktop-width;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
 @mixin reset {
   padding: 0;
   margin: 0;

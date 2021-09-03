@@ -1,0 +1,19 @@
+.burger-menu {
+  &--closed .burger-menu__list {
+    display: none;
+  }
+}
+
+.burger-menu__toggle {
+  background-color: $white;
+  border: none;
+  background-image: url("../img/icon-burger.svg");
+  background-size: auto 100%;
+  width: 23px;
+  height: 16px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}

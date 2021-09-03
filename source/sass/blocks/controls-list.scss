@@ -1,0 +1,63 @@
+.controls-list {
+  @include reset;
+  list-style: none;
+  width: 236px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.control-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.controls-list__link {
+  color: $black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &--geo svg {
+    stroke: $black;
+  }
+
+  &--geo:hover svg {
+    stroke: $red;
+  }
+}
+
+.controls-list__icon-wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    background-color: $red;
+  }
+}
+
+.controls-list__icon-wrapper svg {
+  fill: $black;
+}
+
+.controls-list__icon-wrapper:hover svg {
+  fill: $white;
+}

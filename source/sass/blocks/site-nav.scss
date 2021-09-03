@@ -1,0 +1,42 @@
+.site-nav {
+  @include reset;
+  list-style: none;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 552px;
+}
+
+.site-nav__link {
+  color: $black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--selection {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 6px;
+      right: -10px;
+      width: 6px;
+      height: 6px;
+      background-image: url("../img/icon-arrow-down.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

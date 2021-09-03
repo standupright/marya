@@ -1,0 +1,28 @@
+.tel__link {
+  color: $black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  margin-right: 5px;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.tel__info {
+  color: $black;
+  opacity: 0.3;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+}

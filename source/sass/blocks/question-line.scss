@@ -1,0 +1,55 @@
+.question-line {
+  padding: 9px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.question-line__list {
+  @include reset;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.question-line__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 22px;
+  color: $white;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 140%;
+  position: relative;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.question-line__link svg {
+  stroke: $white;
+}
+
+.question-line__link:hover svg {
+  stroke: $red;
+}
+
+.question-line__icon-question {
+  margin-right: 5px;
+}
+
+.question-line__icon-check {
+  margin-right: 9px;
+}
