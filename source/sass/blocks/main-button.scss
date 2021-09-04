@@ -1,0 +1,27 @@
+.main-button {
+  width: 179px;
+  background: $white;
+  display: block;
+  text-align: center;
+  padding: 11px 10px 10px;
+  color: $red;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  border: 2px solid $red;
+  border-radius: 33px;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $red;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
