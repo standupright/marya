@@ -1,0 +1,42 @@
+.categories {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories__tab {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: $black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $red;
+  }
+
+  &--active {
+    &:hover,
+    &:focus {
+      cursor: default;
+      color: $black;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      bottom: -10px;
+      left: 0;
+      background-color: $black;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.types__element {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.types__list {
+  @include reset;
+  list-style: none;
+  padding-right: 358px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.types__item {
+  display: flex;
+  align-items: center;
+}
+
+.types__link {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 5px;
+  color: $black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 170%;
+
+  &:hover,
+  &:focus {
+    color: $red;
+    cursor: url("../img/hande-cursor.png"), pointer;
+  }
+}
+
+.types__quantity {
+  font-size: 12px;
+  line-height: 150%;
+  opacity: 0.5;
+  padding-bottom: 10px;
+}
+
+.types__delimeter {
+  margin-right: 5px;
+}
