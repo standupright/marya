@@ -1,7 +1,6 @@
 .main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 364px 923px;
   padding-left: 40px;
 }
 
@@ -10,9 +9,9 @@
 }
 
 .main-nav__inner {
-  width: 923px;
-  padding-top: 16px;
-  padding-bottom: 29px;
+
+  padding-top: 15px;
+  padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $gray;
@@ -24,18 +23,18 @@
 
 .main-nav__categories {
   @include reset;
-  width: 923px;
   padding-top: 44px;
   padding-right: 416px;
 }
 
 .main-nav__order-project {
-  padding-top: 44px;
+  padding-top: 40px;
+  padding-left: 18px;
 }
 
 .main-nav__types {
   @include reset;
   list-style: none;
   width: 923px;
-  padding-top: 48px;
+  padding-top: 37px;
 }

@@ -1,16 +1,17 @@
 .controls-list {
   @include reset;
+  padding-top: 12px;
   list-style: none;
-  width: 236px;
+  width: 255px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .control-list__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
+  margin-left: 32px;
 }
 
 .controls-list__link {
@@ -30,7 +31,12 @@
     color: $red;
   }
 
+  &--geo {
+    padding-right: 3px;
+  }
+
   &--geo svg {
+    margin-right: 5px;
     stroke: $black;
   }
 
@@ -40,17 +46,21 @@
 }
 
 .controls-list__icon-wrapper {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.2s;
+  position: relative;
 
-  &:hover,
-  &:focus {
+  &:hover::after,
+  &:focus::after {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 46px;
     background-color: $red;
+    border-radius: 50%;
+    z-index: -1;
   }
 }
 
