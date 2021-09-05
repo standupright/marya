@@ -25,6 +25,7 @@ const OVERFLOW = 'overflow-hidden';
 const body = document.querySelector('#body');
 const burgerMenuToggle = document.querySelector('.burger-menu__toggle');
 const burgerMenuInner = document.querySelector('.burger-menu__inner');
+const burgerFooter = document.querySelector('.burger-footer');
 
 const NAV_OPENED = 'nav--opened';
 const HEADER_OPENED = 'header--opened';
@@ -33,6 +34,7 @@ const MAIN_NAV_OPENED = 'main-nav--opened';
 const SITE_NAV_OPENED = 'site-nav--opened';
 const MAIN_LOGO_OPENED = 'main-nav__main-logo--opened';
 const BURGER_MENU_INNER_OPENED = 'burger-menu__inner--opened';
+const BURGER_FOOTER_OPENED = 'burger-footer--opened';
 
 // nav open and closed
 if (burgerMenuToggle) {
@@ -45,6 +47,7 @@ if (burgerMenuToggle) {
       siteNav.classList.remove(SITE_NAV_OPENED);
       mainLogo.classList.remove(MAIN_LOGO_OPENED);
       burgerMenuInner.classList.remove(BURGER_MENU_INNER_OPENED);
+      burgerFooter.classList.remove(BURGER_FOOTER_OPENED);
       body.classList.remove(OVERFLOW);
     } else {
       burgerMenu.classList.add(BURGER_MENU_OPENED);
@@ -54,6 +57,7 @@ if (burgerMenuToggle) {
       siteNav.classList.add(SITE_NAV_OPENED);
       mainLogo.classList.add(MAIN_LOGO_OPENED);
       burgerMenuInner.classList.add(BURGER_MENU_INNER_OPENED);
+      burgerFooter.classList.add(BURGER_FOOTER_OPENED);
       body.classList.add(OVERFLOW);
     }
   });

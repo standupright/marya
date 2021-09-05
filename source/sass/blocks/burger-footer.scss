@@ -1,0 +1,50 @@
+.burger-footer {
+  display: none;
+  overflow: auto;
+
+  &--opened {
+    overflow: hidden;
+    width: 100vw;
+    height: 425px;
+    position: absolute;
+    top: 541px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.burger-footer__item {
+  position: relative;
+
+  &:nth-of-type(2n-1) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.burger-footer__item img {
+  width: 840px;
+  height: 425px;
+  object-fit: cover;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(0.96);
+  }
+}
+
+.burger-footer__burger-item-description {
+  position: absolute;
+  bottom: 30px;
+  background: $white;
+  width: 370px;
+  padding: 39px 25px 28px 35px;
+
+  &--first {
+    right: 30px;
+  }
+
+  &--second {
+    left: 320px;
+  }
+}
