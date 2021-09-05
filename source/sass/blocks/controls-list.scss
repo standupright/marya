@@ -6,12 +6,12 @@
   display: flex;
   justify-content: flex-end;
 
-  &--fixed .control-list__item:nth-of-type(odd) {
+  &--fixed .controls-list__item:nth-of-type(odd) {
     display: none;
   }
 }
 
-.control-list__item {
+.controls-list__item {
   display: flex;
   align-items: center;
   justify-content: center;
