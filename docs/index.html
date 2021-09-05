@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Мебельная фабрика Мария">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Веломагазин Moon</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="">
+</head>
+
+<body id="body">
+  <header class="header">
+    <div class="header__question-line">
+      <div class="container">
+        <div class="question-line">
+          <ul class="question-line__list">
+            <li>
+              <a class="question-line__link" href="#">
+                <svg class="question-line__icon-question" fill="none" width="17" height="16" xmlns="http://www.w3.org/2000/svg" aria-labelledby="question">
+                  <title id="question">Задать вопрос</title>
+                  <use xlink:href="img/sprite_auto.svg#icon-question"></use>
+                </svg>
+                <span>Задать вопрос</span>
+              </a>
+            </li>
+            <li>
+              <a class="question-line__link" href="#">
+                <svg class="question-line__icon-check" fill="none" width="17" height="17" xmlns="http://www.w3.org/2000/svg" aria-labelledby="check">
+                  <title id="check">Проверить заказ</title>
+                  <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+                </svg>
+                <span>Проверить состояние заказа</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="header__nav nav">
+
+        <div class="nav__burger-menu burger-menu">
+
+          <button class="burger-menu__toggle" type="button" aria-label="Открыть меню"></button>
+
+          <div class="burger-menu__inner">
+            <ul class="burger-menu__header-list header-list">
+              <li>
+                <button class="header-list__tabs">
+                  О компании
+                </button>
+              </li>
+              <li>
+                <button class="header-list__tabs">
+                  Услуги
+                </button>
+              </li>
+              <li>
+                <button class="header-list__tabs header-list__tabs--active">
+                  Продукция
+                </button>
+              </li>
+            </ul>
+
+            <div class="burger-menu__list-wrapper burger-menu-main-lists">
+              <div class="burger-menu-main-lists__item">
+                <div class="burger-menu-main-lists__inner">
+                  <a class="burger-menu-main-lists__mini-title" href="#">Кухни</a>
+                  <ul class="burger-menu-main-lists__sets-list">
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Современные</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Классические</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Неоклассика</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">KarMa by Karim Rashid</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Прованс</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Лофт</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Скандинавский стиль</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Хай-тек</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="burger-menu-main-lists__inner">
+                  <a class="burger-menu-main-lists__mini-title" href="#">Шкафы</a>
+                  <ul class="burger-menu-main-lists__sets-list">
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Купе</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Распашные</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Гардеробные</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="burger-menu-main-lists__inner">
+                  <a class="burger-menu-main-lists__mini-title" href="#">Ванные</a>
+                  <ul class="burger-menu-main-lists__sets-list">
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Современные</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Классические</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Сантехника</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Оборудование</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="burger-menu-main-lists__inner">
+                  <a class="burger-menu-main-lists__mini-title" href="#">Мебель</a>
+                  <ul class="burger-menu-main-lists__sets-list">
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Для кухни</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Столовая группа</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Гостинная</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Спальня</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Для ванной</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="burger-menu-main-lists__inner">
+                  <a class="burger-menu-main-lists__mini-title" href="#">Бытовая техника</a>
+                  <ul class="burger-menu-main-lists__sets-list">
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Варочные панели</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Духовые шкафы</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Микроволновые печи</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Посудомоечные машины</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Холодильники</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Стиральные машины</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Кофемашины</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Компактные приборы</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="burger-menu-main-lists__inner">
+                  <a class="burger-menu-main-lists__mini-title" href="#">Оформление интерьера</a>
+                  <ul class="burger-menu-main-lists__sets-list">
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Вытяжки</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Мойки</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Смесиители</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Посуда</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Настенные покрытия</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="burger-menu-main-lists__inner">
+                  <a class="burger-menu-main-lists__mini-title" href="#">B2B</a>
+                  <ul class="burger-menu-main-lists__sets-list">
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Кухни</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Стойки респешн</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Барные стойки</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Ванные</a>
+                    </li>
+                    <li>
+                      <a class="burger-menu-main-lists__link" href="#">Туалетные комнаты</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="nav__main-nav main-nav">
+
+          <div class="main-nav__tel tel">
+            <a class="tel__link" href="tel:+78001003131">
+              8 800 100 31 31
+            </a>
+            <span class="tel__info">– по РФ бесплатно</span>
+          </div>
+
+
+          <div class="main-nav__inner">
+            <ul class="site-nav">
+              <li>
+                <a class="site-nav__link" href="#">Наши салоны</a>
+              </li>
+              <li>
+                <a class="site-nav__link site-nav__link--selection" href="#">Онлайн сервисы</a>
+              </li>
+              <li>
+                <a class="site-nav__link site-nav__link--selection" href="#">Услуги</a>
+              </li>
+              <li>
+                <a class="site-nav__link site-nav__link--selection" href="#">Акции</a>
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">Сотрудничество</a>
+              </li>
+            </ul>
+
+            <ul class="controls-list">
+              <li class="controls-list__item">
+                <a class="controls-list__link controls-list__link--geo" href="#">
+                  <svg fill="none" width="21" height="24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="geo">
+                    <title id="geo">Местоположение</title>
+                    <use xlink:href="img/sprite_auto.svg#icon-geo"></use>
+                  </svg>
+                  <span class="controls-list__geo-title">Москва</span>
+                </a>
+              </li>
+              <li class="controls-list__item">
+                <a id="search" class="controls-list__link" href="#">
+                  <div id="search-icon" class="controls-list__icon-wrapper">
+                    <svg fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-labelledby="search-title">
+                      <title id="search-title">Поиск</title>
+                      <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="controls-list__item">
+                <a class="controls-list__link" href="#">
+                  <div class="controls-list__icon-wrapper">
+                    <svg fill="none" width="18" height="20" xmlns="http://www.w3.org/2000/svg" aria-labelledby="notifications">
+                      <title id="notifications">Уведомления</title>
+                      <use xlink:href="img/sprite_auto.svg#icon-notification"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="controls-list__item">
+                <a class="controls-list__link" href="#">
+                  <div class="controls-list__icon-wrapper">
+                    <svg fill="none" width="18" height="20" xmlns="http://www.w3.org/2000/svg" aria-labelledby="account">
+                      <title id="account">Аккаунт</title>
+                      <use xlink:href="img/sprite_auto.svg#icon-user"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-nav__search-bar search-bar">
+            <div class="search-bar__wrapper">
+              <div class="search-bar__field">
+                <label for="input-search" class="visually-hidden">Строка запроса</label>
+                <input placeholder="Начните вводить..." class="search-bar__input-search" id="input-search" type="text">
+
+                <div class="search-bar__popup">
+                  <p class="search-bar__mini-title">Популярные запросы</p>
+                  <ul class="search-bar__requests-list">
+                    <li>
+                      <a class="search-bar__request" href="#">Кухонные шкафы Мария</a>
+                    </li>
+                    <li>
+                      <a class="search-bar__request" href="#">Кухонные шкафы серии Микс</a>
+                    </li>
+                    <li>
+                      <a class="search-bar__request" href="#">Белые кухонные шкафы</a>
+                    </li>
+                  </ul>
+
+                  <p class="search-bar__mini-title">Продукция</p>
+                  <ul class="search-bar__production-list production-list">
+                    <li class="production-list__item">
+                      <picture>
+                        <source srcset="img/search-kitchen-intuit.webp 1x, img/search-kitchen-intuit@2x.webp 2x" type="image/webp">
+                        <img src="img/search-kitchen-intuit.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/search-kitchen-intuit@2x.jpg 2x" width="123" height="91">
+                      </picture>
+                      <div>
+                        <a class="production-list__link" href="#">Кухня Intuit</a>
+                        <p>цена от 175 806₽</p>
+                        <p>Богемная лаконичность и глянец модели Intuit достигаются отсутствием ручек </p>
+                      </div>
+                    </li>
+                    <li class="production-list__item">
+                      <picture>
+                        <source srcset="img/search-kitchen-rimini.webp 1x, img/search-kitchen-rimini@2x.webp 2x" type="image/webp">
+                        <img src="img/search-kitchen-rimini.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/search-kitchen-rimini@2x.jpg 2x" width="123" height="91">
+                      </picture>
+                      <div>
+                        <a class="production-list__link" href="#">Кухня Rimini</a>
+                        <p>цена от 204 982₽</p>
+                        <p>Богемная лаконичность и глянец модели Intuit достигаются отсутствием ручек </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <button class="search-bar__find-button">Найти</button>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="main-nav__main-logo">
+            <picture>
+              <source srcset="img/main-logo.webp 1x, img/main-logo@2x.webp 2x" type="image/webp">
+              <img src="img/main-logo.png" alt="Логотип мебельной фабрики Мария" srcset="img/main-logo@2x.png 2x" width="221" height="52">
+            </picture>
+          </div>
+
+          <ul class="main-nav__categories categories">
+            <li>
+              <button class="categories__tab categories__tab--active">Кухни</button>
+            </li>
+            <li>
+              <button class="categories__tab">Шкафы</button>
+            </li>
+            <li>
+              <button class="categories__tab">Ванные</button>
+            </li>
+          </ul>
+
+          <div class="main-nav__order-project">
+            <a href="#" class="main-button">
+              Заказать проект
+            </a>
+          </div>
+
+
+          <ul class="main-nav__types types">
+            <li class="types__element types__element--active">
+              <ul class="types__list">
+                <li class="types__item">
+                  <a class="types__link" href="#">
+                    Современные
+                    <span class="types__quantity">43</span>
+                  </a>
+                  <span>/</span>
+                </li>
+                <li class="types__item">
+                  <a class="types__link" href="#">
+                    Классические
+                    <span class="types__quantity">23</span>
+                  </a>
+                  <span>/</span>
+                </li>
+                <li class="types__item">
+                  <a class="types__link" href="#">
+                    Неоклассика
+                    <span class="types__quantity">27</span>
+                  </a>
+                  <span>/</span>
+                </li>
+                <li class="types__item">
+                  <a class="types__link" href="#">
+                    KarMa by Karim
+                    <span class="types__quantity visually-hidden"></span>
+                  </a>
+                </li>
+                <li class="types__item">
+                  <a class="types__link" href="#">
+                    Rashid
+                    <span class="types__quantity">15</span>
+                  </a>
+                  <span>/</span>
+                </li>
+                <li class="types__item">
+                  <a class="types__link" href="#">
+                    Прованс
+                    <span class="types__quantity">18</span>
+                  </a>
+                  <span>/</span>
+                </li>
+                <li class="types__item">
+                  <a class="types__link" href="#">
+                    Лофт
+                    <span class="types__quantity">14</span>
+                  </a>
+                  <span>/</span>
+                </li>
+                <li class="types__item">
+                  <a class="types__link" href="#">
+                    Скандинавский стиль
+                    <span class="types__quantity">12</span>
+                  </a>
+                  <span>/</span>
+                </li>
+                <li class="types__item">
+                  <a class="types__link" href="#">
+                    Хай-тек
+                    <span class="types__quantity">11</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="types__element">
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="burger-footer">
+      <div class="burger-footer__item">
+        <picture>
+          <source srcset="img/banner-mix.webp 1x, img/banner-mix@2x.webp 2x" type="image/webp">
+          <img src="img/banner-mix.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/banner-mix@2x.png 2x" width="840" height="425">
+        </picture>
+        <div class="burger-footer__burger-item-description burger-footer__burger-item-description--first burger-item-description">
+          <p class="burger-item-description__mini-title">Шкаф-купе Mix</p>
+          <p class="burger-item-description__description">Дуэт дизайна и практичности сочетающиеся в одной модели</p>
+          <div class="burger-item-description__inner">
+            <span class="burger-item-description__price">от 79 125₽</span>
+            <a class="forward-to-item" href="#">
+              <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item-burger">
+                <title id="forward-to-item-burger">Перейти к товару</title>
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="burger-footer__item">
+        <picture>
+          <source srcset="img/banner-nicolle.webp 1x, img/banner-nicolle@2x.webp 2x" type="image/webp">
+          <img src="img/banner-nicolle.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/banner-nicolle@2x.png 2x" width="840" height="425">
+        </picture>
+        <div class="burger-footer__burger-item-description burger-footer__burger-item-description--second burger-item-description">
+          <p class="burger-item-description__mini-title">Модель Nicolle</p>
+          <p class="burger-item-description__description">Изысканность классики в сочетании со строгостью линий модерна
+          </p>
+          <div class="burger-item-description__inner">
+            <span class="burger-item-description__price">от 22 400₽</span>
+            <a class="forward-to-item" href="#">
+              <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item-bur">
+                <title id="forward-to-item-bur">Перейти к товару</title>
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <main>
+    <h1 class="visually-hidden">Moon - магазин по продаже велосипедов</h1>
+
+    <section class="slider">
+      <h2 class="visually-hidden">Примеры интерьеров Moon</h2>
+      <div class="slider__wrapper">
+        <div class="swiper slider__main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slider__item">
+              <picture>
+                <source srcset="img/kitchen-white-big.webp 1x, img/kitchen-white-big@2x.webp 2x" type="image/webp">
+                <img src="img/kitchen-white-big.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-white-big@2x.jpg 2x" width="1338" height="826">
+              </picture>
+
+            </div>
+
+            <div class="swiper-slide slider__item">
+              <picture>
+                <source srcset="img/kitchen-stone-big.webp 1x, img/kitchen-stone-big@2x.webp 2x" type="image/webp">
+                <img src="img/kitchen-stone-big.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-stone-big@2x.jpg 2x" width="1338" height="826">
+              </picture>
+            </div>
+            <div class="swiper-slide slider__item">
+              <picture>
+                <source srcset="img/kitchen-white-big.webp 1x, img/kitchen-white-big@2x.webp 2x" type="image/webp">
+                <img src="img/kitchen-white-big.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-white-big@2x.jpg 2x" width="1338" height="826">
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper slider__banners">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-description">
+                  <picture>
+                    <source srcset="img/logo-bosch.webp 1x, img/logo-bosch@2x.webp 2x" type="image/webp">
+                    <img src="img/logo-bosch.png" alt="Логотип мебельной фабрики Мария" srcset="img/logo-bosch@2x.png 2x" width="180" height="42">
+                  </picture>
+                  <div class="slider-description__inner">
+                    <h3 class="visually-hidden">Посудомоечная машина BOSCH</h3>
+                    <p class="slider-description__description">Посудомоечная машина в подарок</p>
+                    <a class="forward-to-item" href="#">
+                      <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item-first-bosch">
+                        <title id="forward-to-item-first-bosch">Перейти к товару</title>
+                        <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-description">
+                  <img src="img/logo-electrolux.svg" alt="Логотип мебельной фабрики Мария" width="206" height="47">
+                  <div class="slider-description__inner">
+                    <h3 class="visually-hidden">Духовой шкаф Electrolux</h3>
+                    <p class="slider-description__description">Духовой шкаф со скидкой 20%</p>
+                    <a class="forward-to-item" href="#">
+                      <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item-electrolux">
+                        <title id="forward-to-item-electrolux">Перейти к товару</title>
+                        <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-description">
+                  <picture>
+                    <source srcset="img/logo-bosch.webp 1x, img/logo-bosch@2x.webp 2x" type="image/webp">
+                    <img src="img/logo-bosch.png" alt="Логотип мебельной фабрики Мария" srcset="img/logo-bosch@2x.png 2x" width="180" height="42">
+                  </picture>
+                  <div class="slider-description__inner">
+                    <h3 class="visually-hidden">Посудомоечная машина BOSCH</h3>
+                    <p class="slider-description__description">Посудомоечная машина в подарок</p>
+                    <a class="forward-to-item" href="#">
+                      <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item-bosch">
+                        <title id="forward-to-item-bosch">Перейти к товару</title>
+                        <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+        </div>
+        <div class="slider__inner">
+          <div class="slider__portfolio slider-portfolio">
+            <h3 class="slider-portfolio__title">Портфолио</h3>
+            <div class="slider-portfolio__inner">
+              <p class="slider-portfolio__description">Выбери свой проект и дизайнера!</p>
+              <a class="forward-to-item slider-portfolio__link" href="#">
+                <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item-portfolio">
+                  <title id="forward-to-item-portfolio">Перейти к товару</title>
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+
+
+
+          </div>
+
+          <div class="swiper slider__mini">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/kitchen-stone-mini.webp 1x, img/kitchen-stone-mini@2x.webp 2x" type="image/webp">
+                  <img src="img/kitchen-stone-mini.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-stone-mini@2x.jpg 2x" width="580" height="593">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/kitchen-jazz-mini.webp 1x, img/kitchen-jazz-mini@2x.webp 2x" type="image/webp">
+                  <img src="img/kitchen-jazz-mini.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-jazz-mini@2x.jpg 2x" width="580" height="593">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/kitchen-stone-mini.webp 1x, img/kitchen-stone-mini@2x.webp 2x" type="image/webp">
+                  <img src="img/kitchen-stone-mini.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-stone-mini@2x.jpg 2x" width="580" height="593">
+                </picture>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <div class="container">
+      <section class="interiors">
+        <h2 class="visually-hidden">Интерьеры фабрики Moon</h2>
+        <p class="interiors__mini-title">Создайте интерьер в едином стиле вместе с "Марией"</p>
+        <p class="interiors__description">Мебельная фабрика "Мария" — меблировка "под ключ" в едином стиле по
+          индивиальному проекту.
+          Кухня, гостиная, ванная — в коллекциях новинок 2021 года!
+        </p>
+
+        <ul class="interiors__list">
+          <li class="interiors__item">
+            <picture>
+              <source srcset="img/kitchen-jazz-mini.webp 1x, img/kitchen-jazz-mini@2x.webp 2x" type="image/webp">
+              <img src="img/kitchen-jazz-mini.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-jazz-mini@2x.jpg 2x" width="594" height="593">
+            </picture>
+            <h3 class="interiors__title">
+              <a class="interiors__link" href="#">
+                Кухня Jazz
+              </a>
+            </h3>
+            <p class="interiors__sets">Кухня + техника + столовая группа</p>
+          </li>
+          <li class="interiors__item">
+            <picture>
+              <source srcset="img/kitchen-white-interier.webp 1x, img/kitchen-white-interier@2x.webp 2x" type="image/webp">
+              <img src="img/kitchen-white-interier.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-white-interier@2x.jpg 2x" width="664" height="475">
+            </picture>
+            <h3 class="interiors__title">
+              <a class="interiors__link" href="#">
+                Белая кухня WHITE
+              </a>
+            </h3>
+            <p class="interiors__sets">Кухня + техника + столовая группа</p>
+          </li>
+          <li class="interiors__item">
+            <picture>
+              <source srcset="img/kitchen-carpet.webp 1x, img/kitchen-carpet@2x.webp 2x" type="image/webp">
+              <img src="img/kitchen-carpet.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-carpet@2x.jpg 2x" width="593" height="542">
+            </picture>
+            <h3 class="interiors__title">
+              <a class="interiors__link" href="#">
+                Кухня Jazz
+              </a>
+            </h3>
+            <p class="interiors__sets">Кухня + техника + столовая группа</p>
+          </li>
+          <li class="interiors__item">
+            <picture>
+              <source srcset="img/kitchen-fireplace.webp 1x, img/kitchen-fireplace@2x.webp 2x" type="image/webp">
+              <img src="img/kitchen-fireplace.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-fireplace@2x.jpg 2x" width="664" height="608">
+            </picture>
+            <h3 class="interiors__title">
+              <a class="interiors__link" href="#">
+                Белая кухня WHITE
+              </a>
+            </h3>
+            <p class="interiors__sets">Кухня + техника + столовая группа</p>
+          </li>
+        </ul>
+        <div class="interiors__button">
+          <button class=" main-button">
+            Показать ещё
+          </button>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <footer>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
