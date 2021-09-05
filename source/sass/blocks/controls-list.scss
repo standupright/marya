@@ -49,6 +49,14 @@
   }
 }
 
+.controls-list__icon-wrapper svg {
+  fill: $black;
+}
+
+.controls-list__icon-wrapper:hover svg {
+  fill: $white;
+}
+
 .controls-list__icon-wrapper {
   display: flex;
   align-items: center;
@@ -66,12 +74,18 @@
     border-radius: 50%;
     z-index: -1;
   }
-}
 
-.controls-list__icon-wrapper svg {
-  fill: $black;
-}
+  &--active::after {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: $red;
+    border-radius: 50%;
+    z-index: -1;
+  }
 
-.controls-list__icon-wrapper:hover svg {
-  fill: $white;
+  &--active svg {
+    fill: $white;
+  }
 }

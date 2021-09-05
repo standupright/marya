@@ -278,8 +278,8 @@
                 </a>
               </li>
               <li class="control-list__item">
-                <a class="controls-list__link" href="#">
-                  <div class="controls-list__icon-wrapper">
+                <a id="search" class="controls-list__link" href="#">
+                  <div id="search-icon" class="controls-list__icon-wrapper">
                     <svg fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-labelledby="search">
                       <title id="search">Поиск</title>
                       <use xlink:href="img/sprite_auto.svg#icon-search"></use>
@@ -310,6 +310,63 @@
                 </a>
               </li>
             </ul>
+          </div>
+
+          <div class="main-nav__search-bar search-bar">
+            <div class="search-bar__wrapper">
+              <div class="search-bar__field">
+                <label for="input-search" class="visually-hidden">Строка запроса</label>
+                <input placeholder="Начните вводить..." class="search-bar__input-search" id="input-search" type="text">
+
+                <div class="search-bar__popup">
+                  <p class="search-bar__mini-title">Популярные запросы</p>
+                  <ul class="search-bar__requests-list">
+                    <li>
+                      <a class="search-bar__request" href="#">Кухонные шкафы Мария</a>
+                    </li>
+                    <li>
+                      <a class="search-bar__request" href="#">Кухонные шкафы серии Микс</a>
+                    </li>
+                    <li>
+                      <a class="search-bar__request" href="#">Белые кухонные шкафы</a>
+                    </li>
+                  </ul>
+
+                  <p class="search-bar__mini-title">Продукция</p>
+                  <ul class="search-bar__production-list production-list">
+                    <li class="production-list__item">
+                      <picture>
+                        <source srcset="img/search-kitchen-intuit.webp 1x, img/search-kitchen-intuit@2x.webp 2x"
+                          type="image/webp">
+                        <img src="img/search-kitchen-intuit.jpg" alt="Логотип мебельной фабрики Мария"
+                          srcset="img/search-kitchen-intuit@2x.jpg 2x" width="123" height="91">
+                      </picture>
+                      <div>
+                        <a class="production-list__link" href="#">Кухня Intuit</a>
+                        <p>цена от 175 806₽</p>
+                        <p>Богемная лаконичность и глянец модели Intuit достигаются отсутствием ручек </p>
+                      </div>
+                    </li>
+                    <li class="production-list__item">
+                      <picture>
+                        <source srcset="img/search-kitchen-rimini.webp 1x, img/search-kitchen-rimini@2x.webp 2x"
+                          type="image/webp">
+                        <img src="img/search-kitchen-rimini.jpg" alt="Логотип мебельной фабрики Мария"
+                          srcset="img/search-kitchen-rimini@2x.jpg 2x" width="123" height="91">
+                      </picture>
+                      <div>
+                        <a class="production-list__link" href="#">Кухня Rimini</a>
+                        <p>цена от 204 982₽</p>
+                        <p>Богемная лаконичность и глянец модели Intuit достигаются отсутствием ручек </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <button class="search-bar__find-button">Найти</button>
+              </div>
+
+
+            </div>
           </div>
 
           <div class="main-nav__main-logo">

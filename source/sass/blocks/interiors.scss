@@ -1,19 +1,19 @@
 .interiors {
   padding-left: 62px;
-  padding-top: 30px;
   padding-bottom: 132px;
-  border-top: $red-light;
   overflow: hidden;
 }
 
 .interiors__mini-title {
   @include reset;
+  padding-top: 30px;
   margin-bottom: 25px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 140%;
+  border-top: 1px solid $red-light;
 }
 
 .interiors__description {

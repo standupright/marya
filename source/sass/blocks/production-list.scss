@@ -1,0 +1,19 @@
+.production-list__item {
+  display: grid;
+  grid-template-columns: 123px 1fr;
+  column-gap: 19px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 170%;
+}
+
+.production-list__link {
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}

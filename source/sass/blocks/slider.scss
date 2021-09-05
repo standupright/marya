@@ -1,5 +1,6 @@
 .slider {
   position: relative;
+  padding-bottom: 120px;
 }
 
 .slider__banners {
@@ -72,4 +73,28 @@
   background: $white;
   width: 25px;
   height: 25px;
+  position: relative;
+  animation: timer;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 50%;
+    background-color: $gray;
+  }
+}
+
+
+@keyframes timer {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
