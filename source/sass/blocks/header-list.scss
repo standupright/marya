@@ -1,0 +1,41 @@
+.header-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-list__tabs {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: $black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $red;
+  }
+
+  &--active {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      bottom: -23px;
+      left: 0;
+      background-color: $black;
+    }
+
+    &:hover::after {
+      background-color: $red;
+    }
+  }
+}

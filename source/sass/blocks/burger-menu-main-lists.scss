@@ -1,0 +1,61 @@
+.burger-menu-main-lists__item {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.burger-menu-main-lists__inner {
+  margin-right: 49px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.burger-menu-main-lists__mini-title {
+  display: block;
+  color: $black;
+  margin-bottom: 14px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.burger-menu-main-lists__sets-list {
+  @include reset;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.burger-menu-main-lists__link {
+  display: block;
+  width: max-content;
+  color: $black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

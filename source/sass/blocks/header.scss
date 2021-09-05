@@ -11,7 +11,15 @@
     animation-duration: 0.2s;
   }
 
-  &--fixed .header__question-line {
+  &--opened {
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+  }
+
+  &--fixed .header__question-line,
+  &--opened .header__question-line {
     display: none;
   }
 }

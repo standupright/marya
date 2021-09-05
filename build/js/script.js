@@ -1,9 +1,6 @@
-// const NAV_CLOSED = 'nav--closed';
-// const NAV_NOJS = 'nav--nojs';
-// const NAV_OPENED = 'nav--opened';
-// const OVERFLOW = 'overflow-hidden';
-//const nav = document.querySelector('.nav');
+
 const header = document.querySelector('.header');
+const nav = document.querySelector('.nav');
 const questionLine = document.querySelector('.header__question-line');
 const burgerMenu = document.querySelector('.burger-menu');
 const mainNav = document.querySelector('.main-nav');
@@ -12,7 +9,7 @@ const tel = document.querySelector('.main-nav__tel');
 const categories = document.querySelector('.categories');
 const controlsList = document.querySelector('.controls-list');
 const siteNav = document.querySelector('.site-nav');
-const slider = document.querySelector('.slider');
+//const slider = document.querySelector('.slider');
 
 const HEADER_FIXED = 'header--fixed';
 const MAIN_NAV_FIXED = 'main-nav--fixed';
@@ -23,32 +20,49 @@ const TEL_FIXED = 'main-nav__tel--fixed';
 const CATEGORIES_FIXED = 'categories--fixed';
 const CONTROLS_LIST_FIXED = 'controls-list--fixed';
 const SHIFT = header.offsetHeight + questionLine.offsetHeight;
-// const navToggle = document.querySelector('.nav__toggle');
 
-// // nav open and closed
-// if (nav) {
-//   nav.classList.remove(NAV_NOJS);
-//   nav.classList.add(NAV_CLOSED);
-// }
+const OVERFLOW = 'overflow-hidden';
+const body = document.querySelector('#body');
+const burgerMenuToggle = document.querySelector('.burger-menu__toggle');
+const burgerMenuInner = document.querySelector('.burger-menu__inner');
 
-// if (navToggle) {
-//   navToggle.addEventListener('click', () => {
-//     if (nav.classList.contains(NAV_CLOSED)) {
-//       nav.classList.remove(NAV_CLOSED);
-//       nav.classList.add(NAV_OPENED); sads
-//       body.classList.add(OVERFLOW);
-//     } else {
-//       nav.classList.add(NAV_CLOSED);
-//       nav.classList.remove(NAV_OPENED);
-//       body.classList.remove(OVERFLOW);
-//     }
-//   });
-// }
+const NAV_OPENED = 'nav--opened';
+const HEADER_OPENED = 'header--opened';
+const BURGER_MENU_OPENED = 'burger-menu--opened';
+const MAIN_NAV_OPENED = 'main-nav--opened';
+const SITE_NAV_OPENED = 'site-nav--opened';
+const MAIN_LOGO_OPENED = 'main-nav__main-logo--opened';
+const BURGER_MENU_INNER_OPENED = 'burger-menu__inner--opened';
+
+// nav open and closed
+if (burgerMenuToggle) {
+  burgerMenuToggle.addEventListener('click', () => {
+    if (burgerMenu.classList.contains(BURGER_MENU_OPENED)) {
+      burgerMenu.classList.remove(BURGER_MENU_OPENED);
+      header.classList.remove(HEADER_OPENED);
+      nav.classList.remove(NAV_OPENED);
+      mainNav.classList.remove(MAIN_NAV_OPENED);
+      siteNav.classList.remove(SITE_NAV_OPENED);
+      mainLogo.classList.remove(MAIN_LOGO_OPENED);
+      burgerMenuInner.classList.remove(BURGER_MENU_INNER_OPENED);
+      body.classList.remove(OVERFLOW);
+    } else {
+      burgerMenu.classList.add(BURGER_MENU_OPENED);
+      header.classList.add(HEADER_OPENED);
+      nav.classList.add(NAV_OPENED);
+      mainNav.classList.add(MAIN_NAV_OPENED);
+      siteNav.classList.add(SITE_NAV_OPENED);
+      mainLogo.classList.add(MAIN_LOGO_OPENED);
+      burgerMenuInner.classList.add(BURGER_MENU_INNER_OPENED);
+      body.classList.add(OVERFLOW);
+    }
+  });
+}
 
 
 // scroll nav
 window.addEventListener('scroll', () => {
-  let scrollDistance = window.scrollY;
+  const scrollDistance = window.scrollY;
 
   if (scrollDistance >= SHIFT) {
     header.classList.add(HEADER_FIXED);
@@ -69,6 +83,4 @@ window.addEventListener('scroll', () => {
     categories.classList.remove(CATEGORIES_FIXED);
     controlsList.classList.remove(CONTROLS_LIST_FIXED);
   }
-
-
 });
