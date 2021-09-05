@@ -2,14 +2,56 @@
   display: grid;
   grid-template-columns: 364px 923px;
   padding-left: 40px;
+
+  &--fixed {
+    grid-template-columns: 237px 238px 530px 178px 106px;
+
+    .main-nav__main-logo {
+      order: 1;
+      padding: 0;
+      padding-top: 30px;
+      width: 180px;
+    }
+
+    .main-nav__tel {
+      order: 2;
+      padding-top: 40px;
+      padding-right: 0;
+    }
+
+    .main-nav__categories {
+      order: 3;
+      padding-top: 40px;
+      padding-right: 242px;
+    }
+
+    .main-nav__order-project {
+      order: 4;
+      padding: 0;
+      padding-top: 28px;
+    }
+
+    .main-nav__inner {
+      order: 5;
+      padding: 0;
+      border: none;
+    }
+
+    .main-nav__types {
+      display: none;
+    }
+  }
 }
 
 .main-nav__tel {
   padding-top: 31px;
+
+  &--fixed .tel__info {
+    display: none;
+  }
 }
 
 .main-nav__inner {
-
   padding-top: 15px;
   padding-bottom: 26px;
   display: flex;
@@ -19,6 +61,11 @@
 
 .main-nav__main-logo {
   padding-top: 44px;
+
+  &--fixed img {
+    width: 180px;
+    height: 43px;
+  }
 }
 
 .main-nav__categories {

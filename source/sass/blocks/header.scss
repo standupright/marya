@@ -1,3 +1,31 @@
+.header {
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 96px;
+    width: 100%;
+    z-index: 10;
+    background-color: $white;
+    animation: smoothHeader;
+    animation-duration: 0.2s;
+  }
+
+  &--fixed .header__question-line {
+    display: none;
+  }
+}
+
 .header__question-line {
   background-color: $black-additional;
+}
+
+@keyframes smoothHeader {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

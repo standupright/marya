@@ -5,6 +5,10 @@
   width: 255px;
   display: flex;
   justify-content: flex-end;
+
+  &--fixed .control-list__item:nth-of-type(odd) {
+    display: none;
+  }
 }
 
 .control-list__item {

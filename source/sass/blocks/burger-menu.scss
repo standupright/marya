@@ -1,4 +1,8 @@
 .burger-menu {
+  &--fixed {
+    padding-top: 40px;
+  }
+
   &--closed .burger-menu__list {
     display: none;
   }

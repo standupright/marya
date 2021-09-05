@@ -2,6 +2,15 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+
+  &--fixed .categories__tab {
+    font-size: 20px;
+    line-height: 100%;
+
+    &--active::after {
+      display: none;
+    }
+  }
 }
 
 .categories__tab {
@@ -23,12 +32,6 @@
   }
 
   &--active {
-    &:hover,
-    &:focus {
-      cursor: default;
-      color: $black;
-    }
-
     &::after {
       position: absolute;
       content: "";
@@ -37,6 +40,10 @@
       bottom: -10px;
       left: 0;
       background-color: $black;
+    }
+
+    &:hover::after {
+      background-color: $red;
     }
   }
 }
