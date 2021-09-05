@@ -1,4 +1,3 @@
-
 const header = document.querySelector('.header');
 const nav = document.querySelector('.nav');
 const questionLine = document.querySelector('.header__question-line');
@@ -87,4 +86,53 @@ window.addEventListener('scroll', () => {
     categories.classList.remove(CATEGORIES_FIXED);
     controlsList.classList.remove(CONTROLS_LIST_FIXED);
   }
+});
+
+// slider
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  simulateTouch: false,
+  // Default parameters
+  slidesPerView: 1,
+  centeredSlides: false,
+  spaceBetween: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    horizontalClass: '.swiper-pagination-custom',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 10000,
+  },
+});
+
+const swiperBanners = new Swiper('', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  simulateTouch: false,
+  // Default parameters
+  slidesPerView: 1,
+  centeredSlides: false,
+  spaceBetween: 0,
+  controller: {
+    control: swiper,
+  },
+});
+
+
+const swiperMini = new Swiper('', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  simulateTouch: false,
+  // Default parameters
+  slidesPerView: 1,
+  centeredSlides: false,
+  spaceBetween: 0,
+  controller: {
+    control: swiper,
+  },
 });

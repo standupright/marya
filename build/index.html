@@ -7,6 +7,8 @@
   <meta name="description" content="Мебельная фабрика Мария">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Веломагазин Moon</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="">
@@ -451,12 +453,144 @@
 
   </header>
   <main>
+    <h1 class="visually-hidden">Moon - магазин по продаже велосипедов</h1>
+
     <section class="slider">
+      <h2 class="visually-hidden">Примеры интерьеров Moon</h2>
+      <div class="slider__wrapper">
+        <div class="swiper slider__main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slider__item">
+              <picture>
+                <source srcset="img/kitchen-white-big.webp 1x, img/kitchen-white-big@2x.webp 2x" type="image/webp">
+                <img src="img/kitchen-white-big.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-white-big@2x.jpg 2x" width="1338" height="826">
+              </picture>
+
+            </div>
+
+            <div class="swiper-slide slider__item">
+              <picture>
+                <source srcset="img/kitchen-stone-big.webp 1x, img/kitchen-stone-big@2x.webp 2x" type="image/webp">
+                <img src="img/kitchen-stone-big.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-stone-big@2x.jpg 2x" width="1338" height="826">
+              </picture>
+            </div>
+            <div class="swiper-slide slider__item">
+              <picture>
+                <source srcset="img/kitchen-white-big.webp 1x, img/kitchen-white-big@2x.webp 2x" type="image/webp">
+                <img src="img/kitchen-white-big.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-white-big@2x.jpg 2x" width="1338" height="826">
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper slider__banners">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-description">
+                  <picture>
+                    <source srcset="img/logo-bosch.webp 1x, img/logo-bosch@2x.webp 2x" type="image/webp">
+                    <img src="img/logo-bosch.png" alt="Логотип мебельной фабрики Мария" srcset="img/logo-bosch@2x.png 2x" width="180" height="42">
+                  </picture>
+                  <div class="slider-description__inner">
+                    <h3 class="visually-hidden">Посудомоечная машина BOSCH</h3>
+                    <p class="slider-description__description">Посудомоечная машина в подарок</p>
+                    <a class="forward-to-item" href="#">
+                      <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item">
+                        <title id="forward-to-item">Перейти к товару</title>
+                        <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-description">
+                  <img src="img/logo-electrolux.svg" alt="Логотип мебельной фабрики Мария" width="206" height="47">
+                  <div class="slider-description__inner">
+                    <h3 class="visually-hidden">Духовой шкаф Electrolux</h3>
+                    <p class="slider-description__description">Духовой шкаф со скидкой 20%</p>
+                    <a class="forward-to-item" href="#">
+                      <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item">
+                        <title id="forward-to-item">Перейти к товару</title>
+                        <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-description">
+                  <picture>
+                    <source srcset="img/logo-bosch.webp 1x, img/logo-bosch@2x.webp 2x" type="image/webp">
+                    <img src="img/logo-bosch.png" alt="Логотип мебельной фабрики Мария" srcset="img/logo-bosch@2x.png 2x" width="180" height="42">
+                  </picture>
+                  <div class="slider-description__inner">
+                    <h3 class="visually-hidden">Посудомоечная машина BOSCH</h3>
+                    <p class="slider-description__description">Посудомоечная машина в подарок</p>
+                    <a class="forward-to-item" href="#">
+                      <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item">
+                        <title id="forward-to-item">Перейти к товару</title>
+                        <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+        </div>
+        <div class="slider__inner">
+          <div class="slider__portfolio slider-portfolio">
+            <h3 class="slider-portfolio__title">Портфолио</h3>
+            <div class="slider-portfolio__inner">
+              <p class="slider-portfolio__description">Выбери свой проект и дизайнера!</p>
+              <a class="forward-to-item slider-portfolio__link" href="#">
+                <svg fill="none" width="11" height="18" xmlns="http://www.w3.org/2000/svg" aria-labelledby="forward-to-item">
+                  <title id="forward-to-item">Перейти к товару</title>
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+
+
+
+          </div>
+
+          <div class="swiper slider__mini">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/kitchen-stone-mini.webp 1x, img/kitchen-stone-mini@2x.webp 2x" type="image/webp">
+                  <img src="img/kitchen-stone-mini.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-stone-mini@2x.jpg 2x" width="580" height="593">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/kitchen-jazz-mini.webp 1x, img/kitchen-jazz-mini@2x.webp 2x" type="image/webp">
+                  <img src="img/kitchen-jazz-mini.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-jazz-mini@2x.jpg 2x" width="580" height="593">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="img/kitchen-stone-mini.webp 1x, img/kitchen-stone-mini@2x.webp 2x" type="image/webp">
+                  <img src="img/kitchen-stone-mini.jpg" alt="Логотип мебельной фабрики Мария" srcset="img/kitchen-stone-mini@2x.jpg 2x" width="580" height="593">
+                </picture>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
     </section>
 
     <div class="container">
-      <h1 class="visually-hidden">Moon - магазин по продаже велосипедов</h1>
       <section class="interiors">
         <h2 class="visually-hidden">Интерьеры фабрики Moon</h2>
         <p class="interiors__mini-title">Создайте интерьер в едином стиле вместе с "Марией"</p>
@@ -526,6 +660,8 @@
   </main>
   <footer>
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

@@ -1,4 +1,75 @@
 .slider {
+  position: relative;
+}
+
+.slider__banners {
+  z-index: 10;
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  width: 475px;
+  height: 247px;
+}
+
+.slider__wrapper {
+  padding-top: 72px;
+  margin: 0 auto;
+  max-width: $content-width;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__main {
+  background: $gray;
+  width: 1067px;
   height: 826px;
-  background-color: $red;
+  position: relative;
+}
+
+.slider__item img {
+  object-fit: fill;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.slider__inner {
+  overflow: hidden;
+}
+
+.slider__portfolio {
+  width: 385px;
+  height: 203px;
+  padding: 26px 30px 30px 30px;
+  margin-bottom: 30px;
+}
+
+.slider__mini {
+  width: 594px;
+  height: 593px;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  padding-bottom: 65px;
+  padding-left: 75px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  margin-left: 35px;
+  opacity: 0.4;
+  background: $white;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: $white;
+  width: 25px;
+  height: 25px;
 }

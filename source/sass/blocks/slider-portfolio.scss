@@ -1,0 +1,42 @@
+.slider-portfolio {
+  background: $red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider-portfolio__title {
+  @include reset;
+  color: $white;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 140%;
+}
+
+.slider-portfolio__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-portfolio__description {
+  @include reset;
+  width: 165px;
+  color: $white;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.slider-portfolio__link {
+  background: $white;
+}
+
+.slider-portfolio__link svg {
+  stroke: $black;
+}

@@ -1,0 +1,26 @@
+.slider-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $white;
+  padding: 35px;
+  width: 475px;
+  height: 247px;
+}
+
+.slider-description__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-description__description {
+  @include reset;
+  width: 304px;
+  color: $black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+}
